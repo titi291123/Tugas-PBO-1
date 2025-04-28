@@ -19,8 +19,13 @@ public class AuthService {
     }
 
     public void login(Scanner scanner) {
-        System.out.print("\nUsername: ");
+        System.out.println("+----------------+");
+        System.out.println("|    LOGIN PAGE   |");
+        System.out.println("+----------------+");
+
+        System.out.print("Username: ");
         String username = scanner.nextLine();
+
         System.out.print("Password: ");
         String password = scanner.nextLine();
 
@@ -31,7 +36,8 @@ public class AuthService {
                 .orElse(null);
 
         if (currentUser == null) {
-            System.out.println("Login gagal! Username/password salah.");
+            System.out.println();
+            System.out.println("[Login gagal! Username/password salah.]");
             return;
         }
 
@@ -42,4 +48,5 @@ public class AuthService {
 
         menu.showMenu(scanner);
     }
+
 }
