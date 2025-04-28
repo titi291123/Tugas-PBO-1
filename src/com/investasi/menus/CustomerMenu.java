@@ -62,13 +62,16 @@ public class CustomerMenu implements Menu {
         }
 
         while (true) {
-            System.out.println("\n=== " + getMenuName() + " ===");
-            System.out.println("1. Beli Saham");
-            System.out.println("2. Jual Saham");
-            System.out.println("3. Beli SBN");
-            System.out.println("4. Simulasi SBN");
-            System.out.println("5. Portofolio Saya");
-            System.out.println("6. Logout");
+            System.out.println("======================================");
+            System.out.println("||\t\t " + getMenuName() + "\t\t||");
+            System.out.println("======================================");
+            System.out.println("||1. Beli Saham\t\t\t\t\t\t||");
+            System.out.println("||2. Jual Saham\t\t\t\t\t\t||");
+            System.out.println("||3. Beli SBN\t\t\t\t\t\t||");
+            System.out.println("||4. Simulasi SBN\t\t\t\t\t||");
+            System.out.println("||5. Portofolio Saya\t\t\t\t||");
+            System.out.println("||6. Logout\t\t\t\t\t\t\t||");
+            System.out.println("======================================");
             System.out.print("Pilih menu (1-6): ");
 
             int choice = InputUtils.getIntInput(scanner, 1, 6);
