@@ -40,11 +40,14 @@ public class AdminMenu implements Menu {
         }
 
         while (true) {
-            System.out.println("\n=== " + getMenuName() + " ===");
-            System.out.println("1. Kelola Saham");
-            System.out.println("2. Kelola SBN");
-            System.out.println("3. Lihat Portofolio Customer");
-            System.out.println("4. Logout");
+            System.out.println("======================================");
+            System.out.println("||\t\t\t " + getMenuName() + "\t\t\t\t||");
+            System.out.println("======================================");
+            System.out.println("||1. Kelola Saham\t\t\t\t\t||");
+            System.out.println("||2. Kelola SBN\t\t\t\t\t\t||");
+            System.out.println("||3. Lihat Portofolio Customer\t\t||");
+            System.out.println("||4. Logout\t\t\t\t\t\t\t||");
+            System.out.println("======================================");
             System.out.print("Pilih menu: ");
 
             int choice = InputUtils.getIntInput(scanner);
