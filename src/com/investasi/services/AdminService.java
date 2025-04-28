@@ -154,26 +154,32 @@ public class AdminService {
             return;
         }
 
-        System.out.println("\n=== DAFTAR PORTOFOLIO CUSTOMER ===");
+        System.out.println("+=============================================+");
+        System.out.println("|       === DAFTAR PORTOFOLIO CUSTOMER ===    |");
+        System.out.println("+=============================================+");
+
         portfolios.forEach((username, portfolio) -> {
-            System.out.println("\nCustomer: " + username);
+            System.out.println("+---------------------------------------------+");
+            System.out.println("| Customer: " + username);
+            System.out.println("+---------------------------------------------+");
 
             // Saham
             if (!portfolio.getPortofolioSaham().isEmpty()) {
-                System.out.println("Saham:");
+                System.out.println("| Saham:                                     |");
                 portfolio.getPortofolioSaham().forEach((saham, lembar) ->
-                        System.out.printf("- %s: %d lembar (Rp%,.2f)\n",
-                                saham.getKode(), lembar, saham.getHarga() * lembar));
+                        System.out.printf("| - %s: %d lembar (Rp%,.2f)                  |\n", saham.getKode(), lembar, saham.getHarga() * lembar));
             }
 
             // SBN
             if (!portfolio.getPortofolioSBN().isEmpty()) {
-                System.out.println("SBN:");
+                System.out.println("| SBN:                                       |");
                 portfolio.getPortofolioSBN().forEach((sbn, nominal) ->
-                        System.out.printf("- %s: Rp%,.2f\n", sbn.getNama(), nominal));
+                        System.out.printf("| - %s: Rp%,.2f                             |\n", sbn.getNama(), nominal));
             }
 
-            System.out.printf("Total Investasi: Rp%,.2f\n", portfolio.hitungTotalNilaiSaham());
+            // Total Investasi
+            System.out.printf("| Total Investasi: Rp%,.2f                  |\n", portfolio.hitungTotalNilaiSaham());
+            System.out.println("+---------------------------------------------+");
         });
     }
 }
