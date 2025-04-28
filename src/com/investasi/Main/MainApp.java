@@ -22,9 +22,12 @@ public class MainApp {
 
         // Menu utama
         while (true) {
-            System.out.println("\n=== APLIKASI INVESTASI ===");
-            System.out.println("1. Login");
-            System.out.println("2. Keluar");
+            System.out.println("==========================================");
+            System.out.println("||\t\t\tAPLIKASI INVESTASI\t\t\t||");
+            System.out.println("==========================================");
+            System.out.println("||1. Login\t\t\t\t\t\t\t\t||");
+            System.out.println("||2. Keluar \t\t\t\t\t\t\t||");
+            System.out.println("==========================================");
             System.out.print("Pilih menu: ");
 
             int choice = InputUtils.getIntInput(scanner);
