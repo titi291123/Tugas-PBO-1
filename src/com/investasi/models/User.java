@@ -1,5 +1,8 @@
 package com.investasi.models;
 
+/**
+ * Model untuk menyimpan data user/pengguna sistem
+ */
 public class User {
     private String username;
     private String password;
@@ -11,6 +14,7 @@ public class User {
         this.isAdmin = isAdmin;
     }
 
+    // Getter methods
     public String getUsername() {
         return username;
     }

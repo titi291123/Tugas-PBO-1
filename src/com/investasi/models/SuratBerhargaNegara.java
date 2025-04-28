@@ -1,13 +1,18 @@
 package com.investasi.models;
 
 import java.time.LocalDate;
+import java.text.NumberFormat;
+import java.util.Locale;
 
+/**
+ * Model untuk menyimpan data Surat Berharga Negara (SBN)
+ */
 public class SuratBerhargaNegara {
     private String nama;
-    private double bunga;
-    private int jangkaWaktu;
+    private double bunga; // dalam persen
+    private int jangkaWaktu; // dalam bulan
     private LocalDate tanggalJatuhTempo;
-    private double kuotaNasional;
+    private double kuotaNasional; // dalam Rupiah
     private double kuotaTersisa;
 
     public SuratBerhargaNegara(String nama, double bunga, int jangkaWaktu, double kuotaNasional) {
@@ -19,7 +24,7 @@ public class SuratBerhargaNegara {
         this.tanggalJatuhTempo = LocalDate.now().plusMonths(jangkaWaktu);
     }
 
-    // Getters and other methods...
+    // Getter methods
     public String getNama() {
         return nama;
     }
@@ -44,6 +49,11 @@ public class SuratBerhargaNegara {
         return kuotaTersisa;
     }
 
+    /**
+     * Method untuk melakukan pembelian SBN
+     * @param nominal jumlah nominal yang dibeli
+     * @return true jika pembelian berhasil, false jika kuota tidak mencukupi
+     */
     public boolean beli(double nominal) {
         if (nominal <= kuotaTersisa) {
             kuotaTersisa -= nominal;
@@ -54,7 +64,9 @@ public class SuratBerhargaNegara {
 
     @Override
     public String toString() {
-        return String.format("%-15s Bunga: %.2f%% Jangka: %d bln Jatuh Tempo: %s Kuota: Rp%,.2f/% ,.2f",
-                nama, bunga, jangkaWaktu, tanggalJatuhTempo, kuotaTersisa, kuotaNasional);
+        NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("id", "ID"));
+        return String.format("%-15s Bunga: %.2f%% Jangka: %d bln Jatuh Tempo: %s Kuota: %s/%s",
+                nama, bunga, jangkaWaktu, tanggalJatuhTempo,
+                formatter.format(kuotaTersisa), formatter.format(kuotaNasional));
     }
 }
