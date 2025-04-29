@@ -12,23 +12,23 @@ Saat memilih login user akan langsung masuk ke login page dan pengguna harus mem
 
 
 Ada 2 tipe user yang dapat menggunakan aplikasi ini, yaitu admin dan customer. Ada 4 fitur yang tersedia untuk digunakan admin dan 6 fitur untuk customer. Berikut penjelasannya.
-    1. Fitur Admin terdiri dari:
+1. Fitur Admin terdiri dari:
 
 ![Admin Menu](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Admin_Menu.png)
     
-            + Kelola Saham, berguna untuk menambahkan saham baru ke dalam daftar saham yang sudah ada dengan memasukkan kode baru, nama perusahaan, dan harga saham.
+1. Kelola Saham, berguna untuk menambahkan saham baru ke dalam daftar saham yang sudah ada dengan memasukkan kode baru, nama perusahaan, dan harga saham.
 
 ![Kelola Saham](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Kelola_Saham.png)
             
-            + Kelola SBN, di dalam menu kelola SBN terdapat 3 fitur yaitu, tambah SBN, hapus SBN, dan lihat daftar SBN.
+2. Kelola SBN, di dalam menu kelola SBN terdapat 3 fitur yaitu, tambah SBN, hapus SBN, dan lihat daftar SBN.
 
 ![Kelola SBN](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Kelola_SBN.png)
             
-            + Lihat Portofolio Customer, berguna untuk melihat portofolio jumlah saham dan SBN semua customer yang ada di dalam sistem aplikasi.
+3. Lihat Portofolio Customer, berguna untuk melihat portofolio jumlah saham dan SBN semua customer yang ada di dalam sistem aplikasi.
 
 ![Lihat Portofolio Customer](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Lihat_Portofolio_Customer.png)
             
-            + Logout digunakan oleh user saat ingin keluar dari aplikasi.
+4. Logout digunakan oleh user saat ingin keluar dari aplikasi.
 
 ![Logout Admin](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Logout_Admin.png)
             
@@ -37,29 +37,29 @@ Ada 2 tipe user yang dapat menggunakan aplikasi ini, yaitu admin dan customer. A
 
 ![Customer Menu](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Customer_Menu.png)
     
-            + Beli Saham, berguna saat customer ingin membeli saham. Pada fitur ini di dalamnya akan dijabarkan daftar saham secara rinci setiap perusahaan yang tersedia untuk di beli customer. Setelah itu customer akan memilih nomor saham yang akan dibeli, jumlah lembar saham, kemudian akan muncul total dan permintaan konfirmasi pembelian kepada customer.
+1. Beli Saham, berguna saat customer ingin membeli saham. Pada fitur ini di dalamnya akan dijabarkan daftar saham secara rinci setiap perusahaan yang tersedia untuk di beli customer. Setelah itu customer akan memilih nomor saham yang akan dibeli, jumlah lembar saham, kemudian akan muncul total dan permintaan konfirmasi pembelian kepada customer.
 
 ![Beli Saham](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Beli_Saham.png)
             
-            + Jual Saham, fitur ini berguna saat customer ingin menjual saham yang dimiliki dengan cara memasukkan nomor saham yang akan dijual, jumlah lembar, dan permintaan konfirmasi penjualan kepada customer.
+2. Jual Saham, fitur ini berguna saat customer ingin menjual saham yang dimiliki dengan cara memasukkan nomor saham yang akan dijual, jumlah lembar, dan permintaan konfirmasi penjualan kepada customer.
 
 ![Jual Saham](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Jual_Saham.png)
             
-            + Beli SBN, di dalam fitur ini akan dirincikan daftar SBN yang dapat dibeli oleh customer, kemudian customer memilih nomor SBN yang akan dibeli, kemudian sistem akan menampilkan jumlah SBN yang tersedia, setelah itu customer memasukkan nominal pembelian, dan sistem akan menampilkan estimasi bunga perbulan.
+3. Beli SBN, di dalam fitur ini akan dirincikan daftar SBN yang dapat dibeli oleh customer, kemudian customer memilih nomor SBN yang akan dibeli, kemudian sistem akan menampilkan jumlah SBN yang tersedia, setelah itu customer memasukkan nominal pembelian, dan sistem akan menampilkan estimasi bunga perbulan.
 
 ![Beli SBN](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Beli_SBN.png)
             
-            +Simulasi SBN, fitur ini seperti  gambaran kasar bagaimana tata cara pembelian SBN sebelum customer benar-benar membeli SBN. Di dalamnya akan dirincikan daftar SBN yang tersedia untuk dibeli, kemudian memilih nomor SBN yang akan dibeli, lalu customer akan diminta untuk memasukkan nominal investasi, setelah itu sistem akan merincikan proyeksi bunga secara lengkap.
+4. Simulasi SBN, fitur ini seperti  gambaran kasar bagaimana tata cara pembelian SBN sebelum customer benar-benar membeli SBN. Di dalamnya akan dirincikan daftar SBN yang tersedia untuk dibeli, kemudian memilih nomor SBN yang akan dibeli, lalu customer akan diminta untuk memasukkan nominal investasi, setelah itu sistem akan merincikan proyeksi bunga secara lengkap.
 
 ![Simulasi SBN](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Simulasi_SBN_1.png)
 
 ![Simulasi SBN 2](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Simulasi_SBN_2.png)
 
             
-            + Portofolio Saya, fitur ini memungkinkan customer untuk melihat daftar saham dan SBN apa saja yang mereka miliki.
+5. Portofolio Saya, fitur ini memungkinkan customer untuk melihat daftar saham dan SBN apa saja yang mereka miliki.
 
 ![Portofolio Saya](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Portofolio_Saya.png)
 
-            + Logout digunakan saat user ingin keluar dari aplikasi.
+6. Logout digunakan saat user ingin keluar dari aplikasi.
 
 ![Logout Customer](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Logout_Customer.png)
