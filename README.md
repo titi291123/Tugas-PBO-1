@@ -33,7 +33,7 @@ Ada 2 tipe user yang dapat menggunakan aplikasi ini, yaitu admin dan customer. A
 ![Logout Admin](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Logout_Admin.png)
             
 
-    2. Fitur Customer terdiri dari :
+2. Fitur Customer terdiri dari :
 
 ![Customer Menu](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Customer_Menu.png)
     
