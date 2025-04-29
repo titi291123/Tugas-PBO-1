@@ -4,5 +4,7 @@ Kode ini adalah sistem investasi berbasis Java yang memungkinkan admin mengelola
 
 Tampilan awal saat kode di run akan menampilkan login page dengan 2 pilihan menu, yaitu login dan keluar. 
 
-Saat memilih login akan langsung masuk ke login page dan pengguna harus memasukkan username (admin atau customer) dan password
+Saat memilih login akan langsung masuk ke login page dan pengguna harus memasukkan username (admin atau customer) dan password.
 
+Ada 2 tipe user yang dapat menggunakan aplikasi ini, yaitu admin dan customer. Ada 4 fitur yang tersedia untuk digunakan admin dan 6 fitur untuk  customer. Berikut penjelasannya
+    1. Fitur Admin
