@@ -14,7 +14,7 @@ Saat memilih login user akan langsung masuk ke login page dan pengguna harus mem
 Ada 2 tipe user yang dapat menggunakan aplikasi ini, yaitu admin dan customer. Ada 4 fitur yang tersedia untuk digunakan admin dan 6 fitur untuk customer. Berikut penjelasannya.
     1. Fitur Admin terdiri dari:
 
-    ![Admin Menu](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Admin_Menu.png)
+![Admin Menu](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Admin_Menu.png)
     
             + Kelola Saham, berguna untuk menambahkan saham baru ke dalam daftar saham yang sudah ada dengan memasukkan kode baru, nama perusahaan, dan harga saham.
 
