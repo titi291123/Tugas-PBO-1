@@ -32,11 +32,14 @@ public class SBNMenu implements Menu {
         }
 
         while (true) {
-            System.out.println("\n=== " + getMenuName() + " ===");
-            System.out.println("1. Tambah SBN");
-            System.out.println("2. Hapus SBN");
-            System.out.println("3. Lihat Daftar SBN");
-            System.out.println("4. Kembali");
+            System.out.println("==========================================");
+            System.out.println("||\t\t\t " + getMenuName() + "\t\t\t\t\t||");
+            System.out.println("==========================================");
+            System.out.println("||1. Tambah SBN \t\t\t\t\t\t||");
+            System.out.println("||2. Hapus SBN \t\t\t\t\t\t\t||");
+            System.out.println("||3. Lihat Daftar SBN\t\t\t\t\t||");
+            System.out.println("||4. Kembali \t\t\t\t\t\t\t||");
+            System.out.println("==========================================");
             System.out.print("Pilih menu: ");
 
             int choice = InputUtils.getIntInput(scanner);
@@ -113,9 +116,11 @@ public class SBNMenu implements Menu {
             return;
         }
 
-        System.out.println("\n=== DAFTAR SBN ===");
-        System.out.println("No. Nama SBN       Bunga    Jangka  Jatuh Tempo   Kuota Tersisa/Total");
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("==================================================================================================");
+        System.out.println("||\t\t\t\t\t\t\t   DAFTAR SBN  \t\t\t\t\t\t\t\t\t\t\t\t\t\t||");
+        System.out.println("==================================================================================================");
+        System.out.println("||No. Nama SBN      Bunga    \t  Jangka    \tJatuh Tempo      \t\tKuota Tersisa/Total\t\t||");
+        System.out.println("==================================================================================================");
         for (int i = 0; i < daftarSBN.size(); i++) {
             System.out.printf("%2d. %s\n", i + 1, daftarSBN.get(i));
         }
