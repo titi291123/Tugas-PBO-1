@@ -62,4 +62,4 @@ Ada 2 tipe user yang dapat menggunakan aplikasi ini, yaitu admin dan customer. A
 
             + Logout digunakan saat user ingin keluar dari aplikasi.
 
-            ![Logout Customer](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Logout_Customer.png)
+![Logout Customer](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Logout_Customer.png)
