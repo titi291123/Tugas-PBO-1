@@ -18,7 +18,7 @@ Ada 2 tipe user yang dapat menggunakan aplikasi ini, yaitu admin dan customer. A
     
             + Kelola Saham, berguna untuk menambahkan saham baru ke dalam daftar saham yang sudah ada dengan memasukkan kode baru, nama perusahaan, dan harga saham.
 
-![Kelola Saham]((https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Kelola_Saham.png)
+![Kelola Saham](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Kelola_Saham.png)
             
             + Kelola SBN, di dalam menu kelola SBN terdapat 3 fitur yaitu, tambah SBN, hapus SBN, dan lihat daftar SBN.
 
