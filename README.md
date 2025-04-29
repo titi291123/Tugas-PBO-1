@@ -63,3 +63,36 @@ Ada 2 tipe user yang dapat menggunakan aplikasi ini, yaitu admin dan customer. A
 6. Logout digunakan saat user ingin keluar dari aplikasi.
 
 ![Logout Customer](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/Logout_Customer.png)
+
+
+Berikut adalah diagram UML yang menghubungkan antar kelas:
+![UML Diagram](https://raw.githubusercontent.com/titi291123/Tugas-PBO-1/main/assets/images/UML_PBO3.drawio.png)
+
+Analisis Struktur dan Relasi dalam Diagram UML Sistem
+1. Hubungan Inti Sistem
+- MainApp menggunakan (dependency) AuthService untuk menangani proses login.
+- AuthService bergantung pada DataService untuk melakukan verifikasi data pengguna.
+- Setelah proses login berhasil, sistem akan mengarahkan pengguna ke AdminService atau  CustomerService sesuai dengan peran (role) yang dimiliki.
+2. Struktur Kepemilikan Data
+- DataService memiliki relasi composition dengan beberapa entitas data inti berikut:
+   - User – menyimpan informasi pengguna (admin & customer).
+   - Saham – daftar saham yang tersedia dalam sistem.
+   - SuratBerhargaNegara – daftar surat berharga negara (SBN).
+   - InvestasiCustomer – portofolio investasi milik masing-masing customer.
+- Komposisi menandakan bahwa objek-objek tersebut dimiliki penuh oleh DataService dan tidak dapat berdiri sendiri.
+3. Struktur Menu
+- AdminMenu memiliki relasi composition dengan:
+   - SahamMenu – untuk mengelola data saham.
+   - SBNMenu – untuk mengelola data surat berharga negara.
+- CustomerMenu memiliki relasi composition dengan InvestasiCustomer – untuk menampilkan dan mengelola portofolio milik customer.
+4. Pola Injeksi Service
+ - SahamMenu dan SBNMenu memiliki relasi aggregation dengan AdminService. Artinya, mereka menerima referensi AdminService yang telah dibuat di luar dan tidak memilikinya secara eksklusif.
+ - CustomerMenu juga memiliki relasi aggregation dengan CustomerService.
+5. Akses Data
+ - Baik AdminService maupun CustomerService berelasi dengan DataService melalui association untuk mengakses dan memanipulasi data.
+ - CustomerService memiliki association one-to-many dengan Saham dan SuratBerhargaNegara, menandakan interaksi dengan koleksi data tersebut.
+6. Komponen Utilitas
+ - Beberapa kelas seperti SBNMenu dan CustomerMenu menggunakan InputUtils melalui dependency untuk memudahkan pengambilan input dari pengguna.
+ - AdminMenu menggunakan objek Scanner secara langsung, juga melalui dependency.
+7. Implementasi Interface
+ - Seluruh kelas menu (AdminMenu, CustomerMenu, dan lainnya) mengimplementasikan interface Menu, mengikuti pola realization. Mereka semua menyediakan implementasi konkret dari metode yang didefinisikan dalam interface Menu.
